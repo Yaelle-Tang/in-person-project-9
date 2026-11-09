@@ -5,7 +5,9 @@
   flex-direction: column;
   background-color: var(--color-background);
   color: var(--color-text);
-  transition: background-color var(--transition-base), color var(--transition-base);
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
 }
 
 /* Header */
@@ -181,7 +183,9 @@
   padding: var(--spacing-lg);
   border-radius: var(--radius-lg);
   text-align: center;
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 .skill-card:hover {
@@ -214,7 +218,9 @@
   background-color: var(--color-surface);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
   cursor: pointer;
 }
 
@@ -231,6 +237,11 @@
 
 .project-card-content {
   padding: var(--spacing-lg);
+}
+
+.project-card-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .project-card h3 {
@@ -272,7 +283,8 @@
 
 .search-input {
   width: 100%;
-  padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) calc(var(--spacing-2xl) + 8px);
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-md)
+    calc(var(--spacing-2xl) + 8px);
   font-size: var(--font-size-base);
   border: 2px solid var(--color-border);
   border-radius: var(--radius-lg);
